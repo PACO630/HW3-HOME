@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3-phone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #2C2C2C;
+            color: #fff;
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #fff;
+            background-color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #fff;
+            background-color: #555;
+            color: #fff;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        button {
+            background-color: #777;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="http://formsubmit.co/peteyeh0630@yahoo.com" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-Mail：</label>
+            <input type="email" id="email" name="email">
+
+            <label for="issues">您使用手機時最常碰到哪些問題？</label>
+            <textarea id="issues" name="issues"></textarea>
+
+            <label for="carriers">您使用過哪家業者的門號？(可複選)</label>
+            <select id="carriers" name="carriers" multiple>
+                <option>中華電信</option>
+                <option>台灣大哥大</option>
+                <option>遠傳</option>
+                <option>台灣之星</option>
+            </select>
+            
+            <div class="buttons">
+                <button type="submit">提交</button>
+                <button type="reset">重設</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
